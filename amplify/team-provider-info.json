@@ -1,0 +1,27 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-gateguard-dev-164059-authRole",
+      "UnauthRoleArn": "arn:aws:iam::069561439638:role/amplify-gateguard-dev-164059-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::069561439638:role/amplify-gateguard-dev-164059-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-gateguard-dev-164059-deployment",
+      "UnauthRoleName": "amplify-gateguard-dev-164059-unauthRole",
+      "StackName": "amplify-gateguard-dev-164059",
+      "StackId": "arn:aws:cloudformation:ap-south-1:069561439638:stack/amplify-gateguard-dev-164059/06b55380-5a9f-11ed-b96f-02e1780c6e68",
+      "AmplifyAppId": "d2uac1zh6a58wp"
+    },
+    "categories": {
+      "auth": {
+        "gateguard4cdbbbcc": {},
+        "userPoolGroups": {}
+      },
+      "storage": {
+        "gateguard129a9f5a": {
+          "bucketName": "amplify-gateguard-dev-164059-deployment",
+          "region": "ap-south-1"
+        }
+      }
+    }
+  }
+}

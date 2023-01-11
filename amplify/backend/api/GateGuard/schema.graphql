@@ -1,0 +1,62 @@
+type AttendanceList @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  date: AWSDate
+  name: String
+  imageURL: AWSURL
+  profession: String
+  phoneNumber: String
+  arrivalTime: AWSTime
+  departureTime: AWSTime
+}
+
+type NotificationListForUsers @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  message: String
+  imageURL: AWSURL
+  forUser: String
+  date: AWSDate
+  time: AWSTime
+}
+
+type DomesticHelper @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  imageURL: AWSURL
+  age: String
+  gender: String
+  profession: String
+  phoneNumber: String
+  address: String
+  availability: String
+  hourlyRate: String
+  aadharNumber: String
+  skills: String
+}
+
+type Visitor @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  visitorName: String
+  visitorType: String
+  expectedDate: AWSDate
+  expectedTime: AWSTime
+  allowedBy: String
+  memberPhoneNumber: String
+  approvalStatus: String
+  verifyStatus: String
+  code: String
+}
+
+type SocietyMember @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  emailId: AWSEmail
+  imageURL: AWSURL
+  age: String
+  role: String
+  gender: String
+  phoneNumber: String
+  address: String
+  block: String
+  familyMember: String
+}
+ 

@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&family=Urbanist:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .fancy-border{
+  border-top-right-radius: 305px;
+  border-top-left-radius: 155px;
+} */
+
+body::-webkit-scrollbar {
+  width: 0.7em;
+  height: 0.7em;
+}
+ 
+body::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #4338ca;
+  outline: 1px solid #4338ca;
+  border-radius:3px;
+}
+
+/* .bg-image {
+      background-image: url(https://i.postimg.cc/Pq2fJrXw/bg00.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+.backdrop {
+      backdrop-filter: blur(5px);
+    }
+.text-shadow {
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    } */
+  
+
+
+
+@layer base {
+  .btn {
+    @apply rounded-lg  font-inter font-bold focus:outline-none transition duration-300 ease-in px-5 py-2;
+  }
+  .label {
+    @apply rounded-[5px]  font-inter font-semibold  focus:outline-none transition duration-300 ease-in ;
+  }
+
+  .btn-social{
+    @apply rounded-lg  font-inter font-medium focus:outline-none transition duration-300 ease-in px-4 py-1 w-32 bg-transparent border-[1px] border-gray-400 text-gray-400 shadow-md hover:shadow-2xl;
+  }
+  .form-input {
+    @apply w-full pl-10 p-2.5 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md text-sm shadow-sm dark:placeholder-gray-400 focus:outline-none focus:border-indigo-400 dark:focus:border-indigo-500 focus:ring-2 focus:ring-indigo-400 dark:focus:ring-indigo-500
+  }
+}
+
+
+
