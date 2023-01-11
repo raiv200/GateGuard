@@ -118,6 +118,8 @@ const Visitors = () => {
     
       if(verificationCode === original.code){
         
+        console.log("Verification Code is : ", verificationCode);
+        
         toast.success('User Verified Successfully !!', {
           duration: 3000,
           style: {
@@ -152,7 +154,7 @@ const Visitors = () => {
         });
       }
       setToggleRefresh(!toggleRefresh);
-    console.log("Verification Code is : ", verificationCode);
+    
     handleVerifyVisitorModal();
 
   };

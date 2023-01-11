@@ -84,7 +84,7 @@ const SocietyMemberCard = ({
     const newNotification = {
       message: `${visitorName} is waiting at the Society Gate. Do you want ${visitorName} to let him in ?`,
       imageURL: imageURL,
-      forUser:name,
+      forUser:emailId,
       date: new Date().toISOString().substring(0, 10),
       time: new Date().toString().substring(16, 21),
     }
