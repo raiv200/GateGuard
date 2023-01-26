@@ -91,7 +91,7 @@ const VisitorCard = ({
                                 {verifyStatus}
                             </span>
                         </p>
-                        <p className="text-sm font-urbanist font-bold text-gray-800  dark:text-gray-100">Created On: 22-12-22, 8:00 PM</p>
+                        <p className="text-sm font-urbanist font-bold text-gray-800  dark:text-gray-100">Created On: {new Date().toISOString().substring(0,10)},{new Date().toString().substring(16,21)}</p>
                     </div>
 
                     {
